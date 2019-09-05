@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Faça seu cadastro</h1>
+  <form [formGroup]="instanciaForm">
+    <div class="form-group">
+      <label>Nome:</label>
+      <input class="form-control" formControlName="nome">
+      <label>Sobrenome:</label>
+      
+      <input class="form-control" formControlName="sobrenome">
+    </div>
+  </form>
+
+    <button type="button" class="btn btn-dark" (click)="onClick()">Enviar</button>
+  
+
+</div>
