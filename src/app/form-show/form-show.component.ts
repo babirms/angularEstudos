@@ -17,8 +17,10 @@ export class FormShowComponent implements OnInit {
   }
 
   onClick() {
-    console.log(this.Input);
     this.valor = this.Input.formName;
+    this.onClean();
   }
 
+  onClean() {
+  }
 }

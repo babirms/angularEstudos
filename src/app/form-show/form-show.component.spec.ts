@@ -22,7 +22,18 @@ describe('FormShowComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('deve testar se o componente é criado com sucesso', () => {
     expect(component).toBeTruthy();
   });
+
+  it('deve testar se o método onClick() é chamado', () => {
+    spyOn(component, 'onClean').and.callThrough();
+    component.onClick();
+    expect(component.onClean).toHaveBeenCalled();
+  });
+
+  it('deve testar se o método onClean() reseta o formulário', () => {
+    /***/
+  });
+
 });
