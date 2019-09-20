@@ -5,12 +5,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FormInicialComponent } from './form-inicial/form-inicial.component';
 import { BarraComponent } from './barra/barra.component';
+import { FormShowComponent } from './form-show/form-show.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormInicialComponent,
-    BarraComponent
+    BarraComponent,
+    FormShowComponent
   ],
   imports: [
     BrowserModule,
