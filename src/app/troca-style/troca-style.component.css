@@ -1,0 +1,25 @@
+.lista {
+    /* display: none;*/
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.list-group {
+    transition: opacity 1s;
+}
+
+.cardzinho {
+    border: 1px solid #ddd;
+    padding: 20px;
+    transition: background 1s, color 1s;
+}
+
+.cardizinho-alterado {
+    background: tomato;
+    color: white;
+    transition: background 1s, color 1s;
+}
+
+.button-alterado {
+    background: teal !important;
+}

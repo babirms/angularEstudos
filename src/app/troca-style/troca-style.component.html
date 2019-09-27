@@ -1,0 +1,32 @@
+<div class="container">
+  <h1 class=" d-flex flex-column align-items-center p-2">Testando ngClass</h1>
+
+  <!-- Testando aparece via ngClass -->
+  <div class="list-group" [ngClass]="{ 'lista' : !clicou}">
+    <a href="#" class="list-group-item list-group-item-action">
+      Início
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">Material</a>
+    <a href="#" class="list-group-item list-group-item-action">Componentes</a>
+    <a href="#" class="list-group-item list-group-item-action">Serviços Back</a>
+  </div>
+  <br>
+
+  
+    <button type="button" class="btn btn-danger" (click)="onClick()">Altera a opacidade</button>
+  <br><br>
+  <!----------------------------------------------------------------->
+<div class="d-flex justify-content-center">
+  <div class="row ">
+      <div class="col">
+      <div class="cardzinho" [ngClass]="{ 'cardizinho-alterado': !clicouAmarelo}">
+        <p> Aqui será o Teste de troca de cor de fundo e de texto.</p>
+      </div>
+    </div>
+    <div class="col">
+      <br>
+      <button type="button" class="btn btn-warning" [ngClass]="{ 'button-alterado': !clicouAmarelo}" (click)="trocaCor()">Troca a cor</button>
+    </div>
+  </div>
+  </div>
+</div>
