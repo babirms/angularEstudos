@@ -1,2 +1,2 @@
-# angularForms
-Repositório destinado a estudos sobre formulários no Angular.
+# angularEstudos
+Repositório destinado a estudos sobre diretivas e comportamentos do Angular
