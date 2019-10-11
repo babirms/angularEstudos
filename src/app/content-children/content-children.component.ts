@@ -7,19 +7,19 @@ import { ContentStepComponent } from './content-step/content-step.component';
   styleUrls: ['./content-children.component.css']
 })
 export class ContentChildrenComponent implements OnInit, AfterContentInit {
-  teste;
+
 
   @ContentChildren(ContentStepComponent) steps: QueryList<ContentStepComponent>;
-
- ngAfterContentInit() {
-  this.steps.forEach(r => console.log(r));
- }
 
   constructor() {
    }
 
   ngOnInit() {
   }
+
+ ngAfterContentInit() {
+  this.steps.forEach(r => console.log(r));
+ }
 
 
 }

@@ -1,14 +1,31 @@
 <!-- chamada stepper -->
 <app-content-children>
   <!-- chamada steps -->
-    <app-content-step>
-      <p>esse é o passo um</p>
-    </app-content-step>
-    <app-content-step>
-      <p>esse é o passo dois</p>
-    </app-content-step>
-
-    <app-content-step>
-        <p>esse é o passo três</p>
-      </app-content-step>
-   </app-content-children>
+  <app-content-step>
+    <p>esse é o passo um com um botão dentro
+    <button type="button" class="btn btn-primary">TOP</button>
+  </p>
+  </app-content-step>
+  <app-content-step>
+    <p>esse é o passo dois com input</p>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+  </app-content-step>
+  <app-content-step>
+    <p>esse é o passo três com um card
+    </p>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+  </app-content-step>
+</app-content-children>

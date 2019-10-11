@@ -5,6 +5,10 @@
     <li class="breadcrumb-item active" aria-current="page">@ChildrenContent</li>
   </ol>
 </nav>
-<div class="container" *ngFor="let step of steps">
-  <p> entrei </p>
+<div class="container">
+  <ng-content></ng-content>
 </div>
+
+<!-- salvando para possíveis usos depois
+  <div class="container" *ngFor="let step of steps">
+</div>-->

@@ -8,9 +8,8 @@ import { element } from '@angular/core/src/render3';
 })
 export class ContentStepComponent implements OnInit, AfterContentInit {
 
-  elementR;
-  constructor(elementRef: ElementRef<HTMLElement>) {
-    this.elementR = elementRef.nativeElement;
+
+  constructor() {
   }
 
   ngOnInit() {
